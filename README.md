@@ -9,19 +9,24 @@ I came across a type checking problem when creating a trivial RxJava Groovy prog
 
 Compiling with gradle produces the error:
 
+```
 java.lang.ClassCastException: rx.lang.groovy.RxGroovyPropertiesModuleFactory cannot be cast to org.codehaus.groovy.runtime.m12n.PropertiesModuleFactory
+```
 
 Importing the gradle file into Intellij compiles and runs ok.  I converted the program into a script and the program compiles and runs:
 
+```
 D:\repositories\bug-rxjava-groovy-type-checking\scripts>groovy rx.groovy
 item: mark
 item: perry
 JUnit 4 Runner, Tests: 1, Failures: 0, Time: 281
+```
 
 Removing the @TypeChecked annotation in Test1.groovy allows the progam to compile and run ok.
 
 The full Gradle output appears below:
 
+```
 :compileJava UP-TO-DATE
 :compileGroovy UP-TO-DATE
 :processResources UP-TO-DATE
@@ -110,3 +115,4 @@ Run with --stacktrace option to get the stack trace. Run with --info or --debug 
 BUILD FAILED
 
 Total time: 11.941 secs
+```
