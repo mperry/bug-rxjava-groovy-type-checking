@@ -3,9 +3,9 @@ bug-rxjava-groovy-type-checking
 
 I came across a type checking problem when creating a trivial RxJava Groovy program using:
 
-- Gradle 1.11
-- Groovy 2.2.2
-- rxjava-groovy 0.18.1
+- Gradle 1.12
+- Groovy 2.3.0
+- rxjava-groovy 0.18.3
 
 Compiling with gradle produces the error:
 

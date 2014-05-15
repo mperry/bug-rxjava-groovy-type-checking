@@ -8,8 +8,8 @@ repositories {
 }
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy:2.2.2'
-	compile 'com.netflix.rxjava:rxjava-groovy:0.18.1'
+    compile 'org.codehaus.groovy:groovy:2.3.0'
+	testCompile 'com.netflix.rxjava:rxjava-groovy:0.18.3'
 
     // We use the awesome Spock testing and specification framework
     testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
